@@ -4,11 +4,6 @@ const app = getApp();
 import { setLocalStorage } from '../../utils/tools'
 Page({
   data: {
-    motto: '张涛的小程序',
-    userInfo: {},
-    hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo'),
-    canIUseGetUserProfile: false,
     color: 'yellow',
     selectedIndex: 0,
     match:[],
@@ -44,19 +39,6 @@ Page({
       showMatch: this.data.match[e.detail.index].list
     })
     console.log(e.detail.index,this.data.showMatch)
-  },
-  getUserProfile(e) {
-    // 推荐使用wx.getUserProfile获取用户信息，开发者每次通过该接口获取用户个人信息均需用户确认，开发者妥善保管用户快速填写的头像昵称，避免重复弹窗
-    wx.getUserProfile({
-      desc: '展示用户信息', // 声明获取用户个人信息后的用途，后续会展示在弹窗中，请谨慎填写
-      success: (res) => {
-        console.log('展示用户信息',res)
-        this.setData({
-          userInfo: res.userInfo,
-          hasUserInfo: true
-        })
-      }
-    })
   },
   // 近期赛程
   currentWatchList() {
