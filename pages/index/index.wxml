@@ -1,0 +1,23 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="tag">
+    <van-tabs bind:change="changeWeek">
+      <van-tab title="{{match[index].week}}" wx:for="{{match.length}}" wx:key="index"/>
+    </van-tabs>
+  </view>
+  <!-- <view class="block"></view> -->
+  <view class="match" wx:for="{{showMatch}}" wx:key="index">
+    <view class="time">
+      <view class="week">{{showMatch[index].status_text}}</view>
+      <view class="status"></view>
+      <view class="day">{{showMatch[index].time_start}}</view>
+    </view>
+    <view class="detail">
+      <view class="team2">{{showMatch[index].team2}}(主)</view>
+      <view class="vs">vs</view>
+      <view class="team1">{{showMatch[index].team1}}</view>
+    </view>
+    <view class="score">{{showMatch[index].team2_score}} : {{showMatch[index].team1_score}}</view>
+  </view>
+  <view class="block1"></view>
+</view>

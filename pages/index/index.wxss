@@ -1,0 +1,49 @@
+.match {
+  width: 100%;
+  height: 150rpx;
+  background-color: #eeeeee;
+  margin-top: 30rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.tag {
+  width: 100%;
+}
+.date , .week , .status {
+  display: flex;
+  justify-content: center;
+}
+.status {
+  margin-top: 12rpx;
+  margin-bottom: 12rpx;}
+.loser {
+  color:	#A9A9A9;
+}
+.time {
+  font-size: 21rpx;
+}
+.detail {
+  font-size: 26rpx;
+}
+.redText {
+  color: red;
+}
+.greenText {
+  color: green;
+}
+.vs {
+  text-align: center;
+}
+.team1 {
+  text-align: center;
+}
+.block {
+  width: 100%;
+  height: 1rpx;
+  background-color: rgb(170, 56, 56);
+}
+.block1 {
+  width: 100%;
+  height: 66rpx;
+}

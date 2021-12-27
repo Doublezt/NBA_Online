@@ -1,0 +1,50 @@
+.index {
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 96rpx;
+  background-color: #fff;
+  z-index: 100;
+}
+.index > .name {
+  width: 50%;
+  text-align: center;
+}
+.rank {
+  width: 100;
+  padding-top: 196rpx;
+}
+.rank-item {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+}
+.rank-top {
+  width: 100%;
+  position: fixed;
+  top: 96rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #fff;
+  z-index: 100;
+}
+.rank-detail {
+  z-index: 90;
+  display: flex;
+  width: 100%;
+  height: 88rpx;
+}
+.rank-detail-item {
+  width: 25%;
+  text-align: center;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.team {
+  font-size: 24rpx;
+}
