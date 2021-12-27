@@ -1,13 +1,14 @@
 <!--index.wxml-->
 <view class="container">
+  <image src="../../images/me/curry.jpg"></image>
   <view class="welcome">
     <van-collapse accordion value="{{ activeName }}" bind:change="onChange">
-  <van-collapse-item title="版本一更新日志" name="1">
-    最近5天数据，球队排名信息（20211226）
-  </van-collapse-item>
-  <van-collapse-item title="版本二预更新" name="2">
-    优化UI节目，增加球队图标
-  </van-collapse-item>
-</van-collapse>
+      <van-collapse-item title="版本一更新日志" name="1">
+        最近5天数据，球队排名信息（20211226）
+      </van-collapse-item>
+      <van-collapse-item title="版本二预更新" name="2">
+        优化UI节目，增加球队图标
+      </van-collapse-item>
+    </van-collapse>
   </view>
 </view>

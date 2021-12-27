@@ -1,5 +1,6 @@
 <!--index.wxml-->
 <view class="container">
+  <image class="bg" src="../../images/me/curry.jpg"></image>
   <view class="tag">
     <van-tabs bind:change="changeWeek">
       <van-tab title="{{match[index].week}}" wx:for="{{match.length}}" wx:key="index"/>

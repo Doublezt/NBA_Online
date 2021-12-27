@@ -2,7 +2,8 @@
   "pages": [
     "pages/index/index",
     "pages/me/me",
-    "pages/teamRank/teamRank"
+    "pages/teamRank/teamRank",
+    "pages/news/news"
   ],
   "tabBar": {
     "selectedColor": "#FF7F50",
@@ -18,6 +19,12 @@
         "text": "球队排名",
         "selectedIconPath": "images/common/rank_selected.png",
         "iconPath": "images/common/rank.png"
+      },
+      {
+        "pagePath": "pages/news/news",
+        "text": "新闻",
+        "selectedIconPath": "images/common/news_selected.png",
+        "iconPath": "images/common/news.png"
       },
       {
         "pagePath": "pages/me/me",

@@ -1,4 +1,5 @@
 <view class="container">
+  <image class="bg" src="../../images/me/curry.jpg"></image>
   <view class="index">
     <view class="name" bindtap="setPart" data-index="0" style="font-size:{{!partIndex? '40rpx':'30rpx'}}">西部</view>
     <view class="name" bindtap="setPart" data-index="1" style="font-size:{{partIndex ? '40rpx':'30rpx'}}">东部</view>

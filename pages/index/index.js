@@ -85,16 +85,14 @@ Page({
     let localDay = wx.getStorageSync('localday');
     let localNews = wx.getStorageSync('localNews')
     if(!localNews || day != localDay) {
-    let that = this;
     return new Promise((resolve , reject) => {
       wx.request({
         url: 'https://api.tianapi.com/nba/index?key=a26b045e05440800856587401682b7f4&num=50',
         method:'GET',
         success: (response) => {
           console.log('获取新闻成功',response.data.newslist)
-          let myDate = new Date();
-          let day = myDate.getDate().toString();
           wx.setStorageSync('localNews',JSON.stringify(response.data.newslist));
+          wx.setStorageSync('localday',day)
           resolve(response)
         },
         fail: (err) => {
@@ -102,10 +100,6 @@ Page({
         }
       })
     })
-    } else {
-      // 用本地的
-      let news = wx.getStorageSync('localNews')
-      console.log('本地新闻',JSON.parse(news))
     }
   }
 })

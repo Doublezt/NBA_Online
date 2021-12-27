@@ -1,0 +1,15 @@
+<view class="continer">
+  <view class="news" wx:for="{{showNews}}" wx:key="index">
+    <view class="new_img">
+      <image src="{{showNews[index].picUrl}}"/>
+    </view>
+    <view class="text">
+      <view class="title">{{showNews[index].title}}</view>
+      <view class="desc">{{showNews[index].description}}</view>
+      <view class="ctime">{{showNews[index].ctime}}</view>
+    </view>
+  </view>
+</view>
+<view class="next" bindtap="refresh">
+  <image src="../../images/news/refresh.png"></image>
+</view>
