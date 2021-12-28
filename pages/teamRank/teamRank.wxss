@@ -8,7 +8,6 @@
   height: 96rpx;
   background-color: #fff;
   z-index: 100;
-  opacity: 0.9;
 }
 .bg {
   position: fixed;
@@ -25,6 +24,7 @@
 .rank {
   width: 100;
   padding-top: 196rpx;
+  background-color: #fff;
   opacity: 0.9;
 }
 .rank-item {

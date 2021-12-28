@@ -6,8 +6,11 @@
       <van-collapse-item title="版本一更新日志" name="1">
         最近5天数据，球队排名信息（20211226）
       </van-collapse-item>
-      <van-collapse-item title="版本二预更新" name="2">
-        优化UI节目，增加球队图标
+      <van-collapse-item title="版本二更新（当前版本）" name="2">
+        优化UI节目，增加NBA资讯（20211228）
+      </van-collapse-item>
+      <van-collapse-item title="版本三预更新" name="3">
+        增加球队logo，增加主队显示
       </van-collapse-item>
     </van-collapse>
   </view>
